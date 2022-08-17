@@ -2,7 +2,7 @@
 
 **Question on use of .transition()**
 
-I'm looking for a clarification, please, on video “28. Intro to SwiftUI Animation” in the second course on Polishing the App-
+I'm looking for a clarification, please, on video **“28. Intro to SwiftUI Animation”** in the second course on Polishing the App-
 
 Around timestamp 6:45, Ray is adding the ```.transition(.scale)``` modifier to several views in the app:
 
