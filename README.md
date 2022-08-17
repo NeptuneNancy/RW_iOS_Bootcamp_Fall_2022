@@ -8,7 +8,7 @@ Around timestamp 6:45, Ray is adding the .transition(.scale) modifier to several
 
 He adds it to the PointsView struct in PointsView.swift
 
-
+```swift
 struct PointsView: View {
 
     @Binding var alertIsVisible: Bool
@@ -45,13 +45,13 @@ struct PointsView: View {
        
     }
 }
-
+```
 
 He also adds it to three places in ContentView.swift:
 
 To SliderView, to HitMeButton and to PointsView in the body:
 
-
+```swift
 struct ContentView: View {
 
     @State private var alertIsVisible = false
@@ -85,7 +85,7 @@ struct ContentView: View {
         }
     }
 }
-
+```
 
 Why is  .transition(.scale) added to PointsView in PointsView.swift and not to the structs where SliderView and HitMeButton are defined in ContentView.swift?
 
