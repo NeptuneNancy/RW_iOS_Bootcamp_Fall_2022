@@ -1,5 +1,6 @@
-# RW_iOS_Bootcamp_Fall_2022
-Question on use of .transition()
+# RW_iOS_Bootcamp_Fall_2022: Questions
+
+**Question on use of .transition()**
 
 I'm looking for a clarification, please, on video “28. Intro to SwiftUI Animation” in the second course on Polishing the App-
 
