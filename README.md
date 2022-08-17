@@ -91,8 +91,8 @@ Why is  ```.transition(.scale)``` added to ```PointsView``` in ```PointsView.swi
 
 I played around with it a bit and these were my observations:
 
-  *Removing the line from the ```PointsView``` struct in ```PointsView.swift``` seemed to have no impact on how the app behaved; all three views scaled up and down as they came and went, as expected.
+  * Removing the line from the ```PointsView``` struct in ```PointsView.swift``` seemed to have no impact on how the app behaved; all three views scaled up and down as they came and went, as expected.
  
-  *Still with the line removed from ```PointsView.swift```, I changed the line of code on ```PointsView``` in ```ContentView``` to ```.transition(.slide)``` to more clearly see the animation. The custom alert slid in from the left when it appeared and slid out toward the right when it disappeared, so the app again behaved as expected with the line of code still absent from ```PointsView.swift```.
+  * Still with the line removed from ```PointsView.swift```, I changed the line of code on ```PointsView``` in ```ContentView``` to ```.transition(.slide)``` to more clearly see the animation. The custom alert slid in from the left when it appeared and slid out toward the right when it disappeared, so the app again behaved as expected with the line of code still absent from ```PointsView.swift```.
 
-  *If I put ```.transition(.slide)``` in ```PointsView.swift``` and ```.transition(.scale)``` on ```PointsView``` in ```ContentView.swift```, ```.transition(.slide)``` superseded ```transition(.scale)```. My thinking is you wouldn't want to add a transition to ```PointsView.swift``` directly because you may want different behavior in ```ContentView.swift``` and it might be hard to run down why you're seeing something different than what you're expecting.  Thoughts on this point?  Thanks for reading!
+  * When I put ```.transition(.slide)``` in ```PointsView.swift``` and ```.transition(.scale)``` on ```PointsView``` in ```ContentView.swift```, ```.transition(.slide)``` superseded ```transition(.scale)```. My thinking is you wouldn't want to add a transition to ```PointsView.swift``` directly because you may want different behavior in ```ContentView.swift``` and it might be hard to run down why you're seeing something different than what you're expecting.  Thoughts on this point?  Thanks for reading!
